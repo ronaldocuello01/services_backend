@@ -9,7 +9,7 @@ class chargeController{
             const sql = 'INSERT INTO charges (name, status) VALUES ($1, $2)'
             const values = [data.name, 'A']
             const response = await pool.query(sql, values)
-            return res.json({msg: 'Cargo Creado!', response})
+            return res.json({msg: 'Cargo Creado!!!!', response})
         } catch (error) {
             console.log(error);
             return res.json({title: 'error', error: error});
